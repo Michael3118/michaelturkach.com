@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mykhailo Turkach – Online-Bewerbungsprofil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header>
+    <nav>
+      <div class="nav-brand">
+        <span class="nav-name">Mykhailo Turkach</span>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+        <li><a href="#" class="nav-link" data-page="about">About me</a></li>
+        <li><a href="#" class="nav-link" data-page="projects">Projects</a></li>
+        <li><a href="#" class="nav-link" data-page="skills">ICT Skills</a></li>
+        <li><a href="#" class="nav-link" data-page="documents">Documents</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HOME ===================== -->
+    <section class="page active" id="page-home">
+
+      <!-- HERO -->
+      <div class="hero">
+        <div class="hero-left">
+          <p class="hero-eyebrow">👋 Hallo, ich bin</p>
+          <h1 class="hero-name">Mykhailo<br><span>Turkach</span></h1>
+          <p class="hero-title">Informatik-Mittelschüler · IMS Basel</p>
+
+          <!-- KURZPROFIL (2–4 Sätze, 1. Person, spezifisch auf Unblu) -->
+          <div class="kurzprofil">
+            <p class="kp-label">Kurzprofil</p>
+            <p>
+              Ich bin Informatik-Mittelschüler an der IMS Basel und bewerbe mich für ein Praktikum
+              bei Unblu, weil mich die Mission, persönliche Kundenerlebnisse in die digitale Welt zu
+              übertragen, begeistert. Durch meine Schnupperlehre bei Unblu im Jahr 2024 konnte ich
+              erleben, wie wichtig Teamarbeit und technisches Denken in einem Softwareunternehmen
+              sind – und genau das möchte ich im Praktikum vertiefen. Ich bringe Grundkenntnisse in
+              HTML, CSS, JavaScript, PHP, Java und Python mit und lerne täglich weiter. Als jemand,
+              der sich aus der Ukraine in die Schweiz integriert hat, bin ich anpassungsfähig,
+              mehrsprachig und gewohnt, auch in neuen Situationen schnell dazuzulernen.
+            </p>
+          </div>
+
+          <div class="hero-btns">
+            <a href="mailto:mykhailo.turkach@stud.edubs.ch" class="btn btn-primary">✉ Kontakt</a>
+            <a href="#" class="btn btn-outline" onclick="showPage('about')">Lebenslauf ansehen</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="profile-card">
+            <div class="profile-avatar"><img src="portrait.jpg" alt="Foto von Mykhailo Turkach"></div>
+            <h3>Mykhailo Turkach</h3>
+            <p class="profile-role">Informatiker EFZ (in Ausbildung)</p>
+            <div class="profile-info">
+              <div class="pi-row"><span>📅</span><span>31. Januar 2005</span></div>
+              <div class="pi-row"><span>📍</span><span>4058 Basel</span></div>
+              <div class="pi-row"><span>✉</span><span>mykhailo.turkach@stud.edubs.ch</span></div>
+              <div class="pi-row"><span>📞</span><span>076 531 31 15</span></div>
+            </div>
+            <span class="badge-available">● Offen für Praktikum 2027</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ÜBERBLICK KARTEN -->
+      <div class="overview-section">
+        <div class="overview-grid">
+          <div class="ov-card" onclick="showPage('about')">
+            <div class="ov-icon">👤</div>
+            <h4>About me</h4>
+            <p>Lebenslauf, Schulbildung, Erfahrungen und Stärken</p>
+          </div>
+          <div class="ov-card" onclick="showPage('projects')">
+            <div class="ov-icon">💻</div>
+            <h4>Projects</h4>
+            <p>Schulprojekte und dieses Online-Profil als Beispiel</p>
+          </div>
+          <div class="ov-card" onclick="showPage('skills')">
+            <div class="ov-icon">📊</div>
+            <h4>ICT Skills</h4>
+            <p>Informatikkompetenzüberblick mit Skills Chart</p>
+          </div>
+          <div class="ov-card" onclick="showPage('documents')">
+            <div class="ov-icon">📁</div>
+            <h4>Documents</h4>
+            <p>Bewerbungsunterlagen (Login erforderlich)</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===================== ABOUT ME ===================== -->
+    <section class="page" id="page-about">
+      <div class="page-wrap">
+
+        <div class="page-header">
+          <h2>About me</h2>
+        </div>
+
+        <!-- LEBENSLAUF IN HTML-FORMAT -->
+        <div class="cv-wrap">
+          <div class="cv-title-row">
+            <h3 class="cv-main-title">Lebenslauf</h3>
+            <p class="cv-date">Basel, Juni 2026</p>
+          </div>
+
+          <!-- PERSONALIEN -->
+          <div class="cv-section">
+            <h4 class="cv-section-title">Personalien</h4>
+            <table class="cv-table">
+              <tr><td class="cv-label">Name</td><td>Mykhailo Turkach</td></tr>
+              <div class="cv-photo-placeholder">
+                <img src="portrait.jpg" alt="Foto von Mykhailo Turkach" />
+              </div>
+              <tr><td class="cv-label">Adresse</td><td>Schönaustrasse 55</td></tr>
+              <tr><td class="cv-label">Postleitzahl, Ort</td><td>4058 Basel</td></tr>
+              <tr><td class="cv-label">Telefonnummer</td><td>076 531 31 15</td></tr>
+              <tr><td class="cv-label">E-Mail</td><td><a href="mailto:mykhailo.turkach@stud.edubs.ch">mykhailo.turkach@stud.edubs.ch</a></td></tr>
+              <tr><td class="cv-label">Geburtsdatum</td><td>31.01.2005</td></tr>
+              <tr><td class="cv-label">Nationalität</td><td>Ukraine</td></tr>
+              <tr><td class="cv-label">Aufenthaltsbewilligung</td><td>Ausweis S</td></tr>
+              <tr><td class="cv-label">Eltern</td><td>Natalia Turkach, Coiffeuse<br>Aleksey Turkach, Sicherheitsbeamter</td></tr>
+              <tr><td class="cv-label">Geschwister</td><td>Alisa Turkach (15 J., Schülerin)</td></tr>
+            </table>
+          </div>
+
+          <!-- SCHULBILDUNG -->
+          <div class="cv-section">
+            <h4 class="cv-section-title">Schulbildung</h4>
+            <table class="cv-table">
+              <tr><td class="cv-label">2024–2026</td><td>Informatikmittelschule Basel (IMS)<br><em>Informatiker EFZ mit Berufsmaturität · laufend</em></td></tr>
+              <tr><td class="cv-label">2022–2024</td><td>Zentrum für Brückenangebote Basel<br><em>Integratives Profil, 2. Jahr</em></td></tr>
+              <tr><td class="cv-label">2020–2022</td><td>Hochschule, Ukraine<br><em>2 Jahre Studium</em></td></tr>
+              <tr><td class="cv-label">2015–2020</td><td>Mittelschule, Ukraine<br><em>5 Jahre</em></td></tr>
+              <tr><td class="cv-label">2011–2015</td><td>Primarschule, Ukraine<br><em>4 Jahre</em></td></tr>
+            </table>
+          </div>
+
+          <!-- BERUFSERFAHRUNG / SCHNUPPERLEHRE -->
+          <div class="cv-section">
+            <h4 class="cv-section-title">Berufserfahrung / Schnupperlehre</h4>
+            <table class="cv-table">
+              <tr>
+                <td class="cv-label">2024</td>
+                <td>Schnupperlehre – Unblu AG, Basel<br>
+                  <em>2 Tage · Einblicke in Backoffice, Kundenanfragen und Python-Aufgaben. Erfahrungen mit Teamarbeit und Kommunikation in einem Softwareunternehmen.</em>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- SPRACHKENNTNISSE -->
+          <div class="cv-section">
+            <h4 class="cv-section-title">Sprachkenntnisse</h4>
+            <table class="cv-table">
+              <tr><td class="cv-label">Ukrainisch</td><td>Muttersprache</td></tr>
+              <tr><td class="cv-label">Russisch</td><td>Muttersprache</td></tr>
+              <tr><td class="cv-label">Deutsch</td><td>B2 – gut in Wort und Schrift (Schulunterricht seit 2022)</td></tr>
+              <tr><td class="cv-label">Englisch</td><td>B2 – gut in Wort und Schrift</td></tr>
+              <tr><td class="cv-label">Französisch</td><td>B1 – Grundkenntnisse</td></tr>
+            </table>
+          </div>
+
+          <!-- IT-KENNTNISSE -->
+          <div class="cv-section">
+            <h4 class="cv-section-title">Informatikkenntnisse</h4>
+            <table class="cv-table">
+              <tr><td class="cv-label">HTML / CSS</td><td>Grundkenntnisse (IMS-Unterricht und eigene Projekte)</td></tr>
+              <tr><td class="cv-label">JavaScript</td><td>Grundkenntnisse</td></tr>
+              <tr><td class="cv-label">PHP</td><td>Grundkenntnisse</td></tr>
+              <tr><td class="cv-label">Java</td><td>Grundkenntnisse</td></tr>
+              <tr><td class="cv-label">Python</td><td>Grundkenntnisse (Eigeninitiative: Kurse und Übungen)</td></tr>
+              <tr><td class="cv-label">MS Office</td><td>Gute Kenntnisse (Word, Excel, PowerPoint)</td></tr>
+            </table>
+          </div>
+
+          <!-- FREIZEITINTERESSEN -->
+          <div class="cv-section">
+            <h4 class="cv-section-title">Freizeitinteressen</h4>
+            <table class="cv-table">
+              <tr><td class="cv-label">Sport</td><td>Volleyball, Fitnessstudio, Baden</td></tr>
+              <tr><td class="cv-label">Natur &amp; Reisen</td><td>Reisen, Klettern, Fotografieren</td></tr>
+            </table>
+          </div>
+
+          <!-- REFERENZEN -->
+          <div class="cv-section">
+            <h4 class="cv-section-title">Referenzen</h4>
+            <table class="cv-table">
+              <tr>
+                <td class="cv-label">IMS-Lehrperson</td>
+                <td>Béatrice Duc<br><a href="mailto:beatrice.duc@edubs.ch">beatrice.duc@edubs.ch</a></td>
+              </tr>
+            </table>
+          </div>
+
+        </div><!-- /cv-wrap -->
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="page" id="page-projects">
+      <div class="page-wrap">
+        <div class="page-header">
+          <h2>Projects</h2>
+          <p>Schulische und private Arbeitsbeispiele aus meiner Ausbildung an der IMS Basel.</p>
+        </div>
+
+        <h3 class="sub-heading">Schulprojekte</h3>
+        <div class="project-grid">
+
+          <div class="project-card">
+            <div class="project-tag">HTML / CSS / JS</div>
+            <h4>Online-Bewerbungsprofil (dieses Projekt)</h4>
+            <p>Mehrsprachige, mehrseitige Portfolio-Website mit Navigation, Skills Chart, Lebenslauf in HTML, Login-Bereich und Modulnoten-Rechner. Erstellt im Rahmen des IDAF IV an der IMS Basel.</p>
+            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="#" class="project-link" onclick="return false;">🔗 Dieses Profil</a>
+          </div>
+
+          <div class="project-card">
+            <div class="project-tag">HTML / CSS</div>
+            <h4>Webauftritt – Modul 293</h4>
+            <p>Erstellung und Veröffentlichung eines vollständigen Webauftritts gemäss Modulvorgaben. Responsives Design, semantisches HTML und strukturiertes CSS.</p>
+            <div class="project-tech"><span>HTML</span><span>CSS</span></div>
+            <span class="project-link-placeholder">📎 Datei auf Anfrage</span>
+          </div>
+
+          <div class="project-card">
+            <div class="project-tag">PHP / Backend</div>
+            <h4>Web-Applikation – Modul 294</h4>
+            <p>Server-seitige Web-Applikation mit PHP, Formularverarbeitung und Datenbankanbindung (MySQL). Erstellt im Rahmen des IMS-Unterrichts.</p>
+            <div class="project-tech"><span>PHP</span><span>MySQL</span><span>HTML</span></div>
+            <span class="project-link-placeholder">📎 Datei auf Anfrage</span>
+          </div>
+
+          <div class="project-card">
+            <div class="project-tag">Python</div>
+            <h4>Script-Automatisierung – Modul 122</h4>
+            <p>Automatisierung von Abläufen mit Python-Scripts. Verarbeitung von Dateien, Schleifen, Funktionen und einfache Algorithmen.</p>
+            <div class="project-tech"><span>Python</span></div>
+            <span class="project-link-placeholder">📎 Datei auf Anfrage</span>
+          </div>
+
+          <div class="project-card">
+            <div class="project-tag">Java / OOP</div>
+            <h4>OOP-Projekt – Modul 326</h4>
+            <p>Objektorientierte Applikation in Java. Klassen, Vererbung, Interfaces und grundlegende Entwurfsmuster.</p>
+            <div class="project-tech"><span>Java</span></div>
+            <span class="project-link-placeholder">📎 Datei auf Anfrage</span>
+          </div>
+
+          <div class="project-card">
+            <div class="project-tag">SQL</div>
+            <h4>Datenbank – Modul 162</h4>
+            <p>Erstellen und Abfragen von relationalen Datenbanken mit SQL. Entity-Relationship-Modelle und normalisierte Tabellenstrukturen.</p>
+            <div class="project-tech"><span>SQL</span><span>MySQL</span></div>
+            <span class="project-link-placeholder">📎 Datei auf Anfrage</span>
+          </div>
+
+        </div>
+
+        <h3 class="sub-heading" style="margin-top:48px;">Private Projekte</h3>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-tag">Python – Eigeninitiative</div>
+            <h4>Python-Übungen &amp; Kurse</h4>
+            <p>Neben der Schule vertiefe ich meine Python-Kenntnisse eigenständig durch Online-Kurse und eigene Übungsaufgaben – besonders Algorithmen und Datenverarbeitung interessieren mich.</p>
+            <div class="project-tech"><span>Python</span></div>
+            <span class="project-link-placeholder">📎 privat</span>
+          </div>
+          <div class="project-card">
+            <div class="project-tag">Schnupperlehre 2024</div>
+            <h4>Praxiserfahrung – Unblu AG</h4>
+            <p>Einblicke in den Alltag eines Softwareunternehmens: Backoffice-Abläufe, Bearbeitung von Kundenanfragen und erste C#-Aufgaben unter Anleitung.</p>
+            <div class="project-tech"><span>C#</span><span>Teamarbeit</span></div>
+            <span class="project-link-placeholder">📎 Schnupperlehre-Bestätigung</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== ICT SKILLS ===================== -->
+    <section class="page" id="page-skills">
+      <div class="page-wrap">
+        <div class="page-header">
+          <h2>ICT Skills</h2>
+          <p>Informatikkompetenzüberblick gemäss IDAF IV, Dossier 4.3 – persönlicher Skills Chart.</p>
+        </div>
+
+        <!-- SKILLS CHART TABELLE -->
+        <div class="skills-chart-wrap">
+          <table class="skills-chart">
+            <thead>
+              <tr>
+                <th>Kompetenz</th>
+                <th>Bereich</th>
+                <th colspan="5">Niveau</th>
+              </tr>
+              <tr class="level-header">
+                <th colspan="2"></th>
+                <th>Anfänger</th>
+                <th>Grundlagen</th>
+                <th>Fortgeschritten</th>
+                <th>Gut</th>
+                <th>Sehr gut</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML</td>
+                <td>Web-Entwicklung</td>
+                <td></td>
+                <td></td>
+                <td class="level-dot filled">●</td>
+                <td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>Web-Entwicklung</td>
+                <td></td>
+                <td></td>
+                <td class="level-dot filled">●</td>
+                <td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td>Web-Entwicklung</td>
+                <td></td>
+                <td class="level-dot filled">●</td>
+                <td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td>PHP</td>
+                <td>Backend / Server</td>
+                <td></td>
+                <td class="level-dot filled">●</td>
+                <td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td>Java</td>
+                <td>Programmierung / OOP</td>
+                <td></td>
+                <td class="level-dot filled">●</td>
+                <td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td>Python</td>
+                <td>Scripting / Eigeninitiative</td>
+                <td></td>
+                <td class="level-dot filled">●</td>
+                <td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td>SQL / Datenbanken</td>
+                <td>Datenbanken</td>
+                <td></td>
+                <td class="level-dot filled">●</td>
+                <td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td>MS Office (Word, Excel, PPT)</td>
+                <td>Büroanwendungen</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="level-dot filled">●</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Objektorientiertes Design</td>
+                <td>Software-Architektur</td>
+                <td></td>
+                <td class="level-dot filled">●</td>
+                <td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td>Git / Versionskontrolle</td>
+                <td>Entwicklungstools</td>
+                <td></td>
+                <td class="level-dot filled">●</td>
+                <td></td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td>Netzwerke / Systeme</td>
+                <td>Systemtechnik</td>
+                <td class="level-dot filled">●</td>
+                <td></td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td>Cyber Security Grundlagen</td>
+                <td>Sicherheit</td>
+                <td></td>
+                <td class="level-dot filled">●</td>
+                <td></td><td></td><td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="legend">
+          <p>Legende: <strong>Anfänger</strong> = erste Kenntnisse · <strong>Grundlagen</strong> = IMS-Unterricht abgeschlossen · <strong>Fortgeschritten</strong> = eigenständige Projekte · <strong>Gut</strong> = sicherer Einsatz · <strong>Sehr gut</strong> = Experte</p>
+        </div>
+
+        <!-- SPRACHKOMPETENZ -->
+        <h3 class="sub-heading" style="margin-top:48px;">🗣 Sprachkompetenz</h3>
+        <div class="lang-grid">
+          <div class="lang-card">
+            <span class="lc-flag">🇺🇦</span>
+            <div class="lc-body">
+              <div class="lc-name">Ukrainisch</div>
+              <div class="lc-level">Muttersprache</div>
+              <div class="lc-bar"><div class="lc-fill" style="width:100%"></div></div>
+            </div>
+          </div>
+          <div class="lang-card">
+            <span class="lc-flag">🇷🇺</span>
+            <div class="lc-body">
+              <div class="lc-name">Russisch</div>
+              <div class="lc-level">Muttersprache</div>
+              <div class="lc-bar"><div class="lc-fill" style="width:100%"></div></div>
+            </div>
+          </div>
+          <div class="lang-card">
+            <span class="lc-flag">🇩🇪</span>
+            <div class="lc-body">
+              <div class="lc-name">Deutsch</div>
+              <div class="lc-level">B2 – Gut</div>
+              <div class="lc-bar"><div class="lc-fill" style="width:75%"></div></div>
+            </div>
+          </div>
+          <div class="lang-card">
+            <span class="lc-flag">🇬🇧</span>
+            <div class="lc-body">
+              <div class="lc-name">Englisch</div>
+              <div class="lc-level">B2 – Gut</div>
+              <div class="lc-bar"><div class="lc-fill" style="width:75%"></div></div>
+            </div>
+          </div>
+          <div class="lang-card">
+            <span class="lc-flag">🇫🇷</span>
+            <div class="lc-body">
+              <div class="lc-name">Französisch</div>
+              <div class="lc-level">B1 – Grundlagen</div>
+              <div class="lc-bar"><div class="lc-fill" style="width:50%"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== DOCUMENTS (LOGIN) ===================== -->
+    <section class="page" id="page-documents">
+      <div class="page-wrap">
+        <div class="page-header">
+          <h2>Documents</h2>
+          <p>Privater Bereich – Login erforderlich. Hier findest du alle Bewerbungsunterlagen zum Download.</p>
+        </div>
+
+        <!-- LOGIN-FORMULAR -->
+        <div class="login-area" id="loginArea">
+          <div class="login-card">
+            <div class="login-icon">🔒</div>
+            <h3>Zugang für Personalverantwortliche</h3>
+            <p>Dieser Bereich ist passwortgeschützt. Bitte wenden Sie sich per E-Mail an mich, um die Zugangsdaten zu erhalten.</p>
+            <div class="login-fields">
+              <div class="field-group">
+                <label for="loginUser">Benutzername</label>
+                <input type="text" id="loginUser" placeholder="Benutzername" autocomplete="username" />
+              </div>
+              <div class="field-group">
+                <label for="loginPass">Passwort</label>
+                <input type="password" id="loginPass" placeholder="Passwort" autocomplete="current-password" />
+              </div>
+              <p class="login-error" id="loginError"></p>
+              <button class="btn btn-primary" id="loginBtn" style="width:100%;">Anmelden</button>
+            </div>
+            <p class="login-hint">Zugangsdaten per E-Mail anfragen: <a href="mailto:mykhailo.turkach@stud.edubs.ch">mykhailo.turkach@stud.edubs.ch</a></p>
+          </div>
+        </div>
+
+        <!-- DOKUMENTE (nach Login sichtbar) -->
+        <div class="docs-area" id="docsArea" style="display:none;">
+          <div class="docs-welcome">
+            <span>✅</span>
+            <div>
+              <strong>Erfolgreich angemeldet</strong>
+              <p>Willkommen! Alle Unterlagen können als PDF heruntergeladen werden.</p>
+            </div>
+            <button class="btn btn-outline" id="logoutBtn" style="margin-left:auto;">Abmelden</button>
+          </div>
+
+          <div class="docs-grid">
+            <div class="doc-card">
+              <div class="doc-icon">📝</div>
+              <div class="doc-body">
+                <h4>Bewerbungsschreiben</h4>
+                <p>Bewerbung um eine Praktikumsstelle als Informatiker EFZ bei Unblu AG</p>
+                <span class="doc-meta">PDF · Mykhailo Turkach · Mai 2026</span>
+              </div>
+              <a href="Bewerbung.pdf" class="doc-dl" download>⬇ PDF</a>
+            </div>
+
+            <div class="doc-card">
+              <div class="doc-icon">🎓</div>
+              <div class="doc-body">
+                <h4>IMS-Semesterzeugnisse</h4>
+                <p>Semesterzeugnisse der Informatikmittelschule Basel, 2024–2026</p>
+                <span class="doc-meta">PDF · IMS Basel</span>
+              </div>
+              <a href="Zeugnis.pdf" class="doc-dl" download>⬇ PDF</a>
+            </div>
+
+            <div class="doc-card">
+              <div class="doc-icon">📊</div>
+              <div class="doc-body">
+                <h4>Modulnotenüberblick</h4>
+                <p>Übersicht aller Modulnoten aus der IMS-Ausbildung</p>
+                <span class="doc-meta">PDF · IMS Basel · 2024–2026</span>
+              </div>
+              <a href="Modulnotenübersicht.pdf" class="doc-dl" download>⬇ PDF</a>
+            </div>
+
+            <div class="doc-card">
+              <div class="doc-icon">🌐</div>
+              <div class="doc-body">
+                <h4>Sprachzertifikate</h4>
+                <p>Nachweise für Deutschkenntnisse B2, Englisch B2, Französisch B1</p>
+                <span class="doc-meta">PDF · Diverse Aussteller</span>
+              </div>
+              <a href="Delf_B1.pdf" class="doc-dl" download>⬇ PDF</a>
+            </div>
+
+            <div class="doc-card">
+              <div class="doc-icon">💼</div>
+              <div class="doc-body">
+                <h4>Schnupperlehre-Bestätigung</h4>
+                <p>Bestätigung der zweitägigen Schnupperlehre bei Unblu AG, 2024</p>
+                <span class="doc-meta">PDF · Unblu AG · 2024</span>
+              </div>
+              <a href="#" class="doc-dl" title="Herunterladen" onclick="return false;">⬇ PDF</a>
+            </div>
+          </div>
+
+          <p class="doc-note"> Für sofortigen Zugriff bitte per E-Mail anfragen.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Mykhailo Turkach · Schönaustrasse 55, 4058 Basel · <a href="mailto:mykhailo.turkach@stud.edubs.ch">mykhailo.turkach@stud.edubs.ch</a> · 076 531 31 15</p>
+    <p class="footer-sub">Online-Bewerbungsprofil · IMS Basel · IDAF IV · Basel, Juni 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
